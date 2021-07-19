@@ -1,3 +1,8 @@
+//Creado por: Mauro Clavijo
+//Fecha: 19/07/2021
+
+//Declaración de clases y atributos a utilizarse
+
 package com.canterita.challenge.backend.test.dto;
 
 import lombok.AllArgsConstructor;

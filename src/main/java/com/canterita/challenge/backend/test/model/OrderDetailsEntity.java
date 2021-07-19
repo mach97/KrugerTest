@@ -1,3 +1,8 @@
+//Creado por: Mauro Clavijo
+//Fecha: 19/07/2021
+
+//Las entidades que operan con la db son creadas
+
 package com.canterita.challenge.backend.test.model;
 
 import lombok.Data;

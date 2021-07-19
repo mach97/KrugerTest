@@ -1,6 +1,8 @@
+//Creado por: Mauro Clavijo
+//Fecha: 19/07/2021
+
 package com.canterita.challenge.backend.test.rest;
 
-import com.canterita.challenge.backend.test.dto.OrderDetailsDto;
 import com.canterita.challenge.backend.test.dto.request.OrderDetailsRequest;
 import com.canterita.challenge.backend.test.model.OrderDetailsEntity;
 import com.canterita.challenge.backend.test.service.IOrderDetailsService;
@@ -10,7 +12,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-
+//Aqui declaramos las funciones que van a ser llamadas cuando se llaman las rutas
 @RestController
 @RequestMapping("/orders")
 public class OrderDetailsController {
