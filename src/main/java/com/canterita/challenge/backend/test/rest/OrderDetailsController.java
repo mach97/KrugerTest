@@ -19,6 +19,7 @@ public class OrderDetailsController {
 	private IOrderDetailsService orderDetailsService;
 
 	@GetMapping(value = "/{id}/details")
+	@CrossOrigin(origins = "http://localhost:3000")
 	@ResponseStatus(HttpStatus.OK)
 	public List<OrderDetailsEntity> getOrderDetails(@PathVariable Long id) {
 		return orderDetailsService.getOrderDetails(id);
@@ -26,5 +27,5 @@ public class OrderDetailsController {
 
 	@PostMapping(value = "/{id}/details")
 	@ResponseStatus(HttpStatus.OK)
-	public OrderDetailsDto postOrderDetails( @PathVariable Long id, @RequestBody OrderDetailsRequest request) { return orderDetailsService.postOrderDetails(id, request);}
+	public OrderDetailsEntity postOrderDetails( @PathVariable Long id, @RequestBody OrderDetailsRequest request) { return orderDetailsService.postOrderDetails(id, request);}
 }
